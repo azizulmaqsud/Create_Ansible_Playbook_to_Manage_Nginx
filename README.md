@@ -91,19 +91,19 @@ scp -i "Ansible-master-key.pem" Ansible-master-key.pem ubuntu@ec2-3-90-57-129.co
  }
 
 # Create Playbooks
- cd .. 
- mkdir playbooks
- cd playbooks
- vim date_play.yml
+ - cd .. 
+ - mkdir playbooks
+ - cd playbooks
+ - vim date_play.yml
   -
-   name: Date Playbook
-   hosts: servers
-   tasks: 
+   - name: Date Playbook
+   - hosts: servers
+   - tasks: 
      - name: Show uptime
-       command: uptime
+     - command: uptime
 
-Esc
-:wq!
+- Esc
+- :wq!
 
 ansible-playbook -v date_play.yml
 
