@@ -84,11 +84,11 @@ scp -i "Ansible-master-key.pem" Ansible-master-key.pem ubuntu@ec2-3-90-57-129.co
  - ansible-inventory --list -y
  - ansible prd -m ping
 
-## see success printed as below
- server-3 | SUCCESS => {
- "changed": false,
- "ping": "pong"
- }
+## Printed as below
+ - server-3 | SUCCESS => {
+ - "changed": false,
+ - "ping": "pong"
+ - }
 
 # Create Playbooks
  - cd .. 
