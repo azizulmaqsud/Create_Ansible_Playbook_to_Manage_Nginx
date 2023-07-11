@@ -1,4 +1,4 @@
-# Create_Ansible_Playbooks_To_Manage_Nginx_Webservers
+
 # Steps
 ## Create EC2 instances (using UBUNTU here)
 - Create One Ansible-master with a newly created key Ansible-master-key.pem 
